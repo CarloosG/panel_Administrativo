@@ -21,11 +21,13 @@ export function Header() {
           <NavLink href="/usuarios" icon={<UserCog />}> {/* Changed icon */}
             Usuarios
           </NavLink>
-          {/* Basic Logout button - functionality would need implementation */}
-           <Button variant="ghost" size="sm" className="text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground gap-1.5">
-            <LogOut className="h-4 w-4" />
-            <span className="hidden sm:inline">Salir</span> {/* Changed text */}
-          </Button>
+          {/* Changed Link to point to /salir */}
+          <Link href="/salir">
+             <Button variant="ghost" size="sm" className="text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground gap-1.5">
+              <LogOut className="h-4 w-4" />
+              <span className="hidden sm:inline">Salir</span>
+            </Button>
+          </Link>
         </nav>
       </div>
     </header>
