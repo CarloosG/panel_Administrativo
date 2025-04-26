@@ -1,4 +1,4 @@
-# Navegador del Panel de Administración - Entornos de programación G1
+# Navegador del Panel de Administración - Entornos de Programación G1
 
 Este proyecto demuestra una aplicación web de panel administrativo simple construida con [Next.js](https://nextjs.org/) (framework de React) y estilada utilizando [Tailwind CSS](https://tailwindcss.com/) a través de componentes de [ShadCN UI](https://ui.shadcn.com/). Cuenta con una barra de navegación fija moderna y enrutamiento básico para diferentes secciones.
 
