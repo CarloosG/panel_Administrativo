@@ -1,67 +1,76 @@
-# Admin Panel Navigator
+# Navegador del Panel de Administración - Entornos de programación G1
 
-This project demonstrates a simple administrative panel web application built with Next.js (React framework) and styled using Tailwind CSS via ShadCN UI components. It features a modern fixed navigation bar and basic routing for different sections.
+Este proyecto demuestra una aplicación web de panel administrativo simple construida con [Next.js](https://nextjs.org/) (framework de React) y estilada utilizando [Tailwind CSS](https://tailwindcss.com/) a través de componentes de [ShadCN UI](https://ui.shadcn.com/). Cuenta con una barra de navegación fija moderna y enrutamiento básico para diferentes secciones.
 
-## Features
+## Realizado por
+
+- Carlos Gómez
+- Julián Pérez
+- Anderson Lemus
+
+## Características
 
 - **Framework**: Next.js (App Router)
-- **Styling**: Tailwind CSS with ShadCN UI components
-- **Routing**: Next.js App Router for page-based routing
-- **Navigation**: Fixed top navigation bar with links to:
-    - Clientes (Clients)
-    - Proveedor (Providers)
-    - Usuarios (Users)
-    - Logout button (no functionality implemented)
-- **Views**: Simple placeholder content for each section.
+- **Estilos**: Tailwind CSS con componentes de ShadCN UI
+- **Enrutamiento**: Next.js App Router para enrutamiento basado en páginas
+- **Navegación**: Barra de navegación superior fija con enlaces a:
+  - Clientes
+  - Proveedor
+  - Usuarios
+  - Botón de Cerrar Sesión (funcionalidad no implementada)
+- **Vistas**: Contenido de marcador de posición simple para cada sección.
 
-## Getting Started
+## Empezando
 
-1.  **Clone the repository (if applicable):**
-    ```bash
-    git clone <your-repo-url>
-    cd admin-panel-navigator
-    ```
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
-    Open [http://localhost:9002](http://localhost:9002) (or the specified port) in your browser.
+1. **Clonar el repositorio (si aplica):**
+   ```bash
+   git clone <tu-url-del-repositorio>
+   cd admin-panel-navigator
+   ```
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+3. **Ejecutar el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+   Abre [https://www.google.com/search?q=http://localhost:9002](https://www.google.com/search?q=http://localhost:9002) (o el puerto especificado) en tu navegador.
 
-## Project Structure
+## Estructura del Proyecto
 
-- `src/app/`: Contains the main application pages and layouts (using Next.js App Router).
-    - `layout.tsx`: Root layout, includes global styles and main structure.
-    - `page.tsx`: Home page component.
-    - `clientes/page.tsx`: Clients section page.
-    - `proveedor/page.tsx`: Provider section page.
-    - `usuarios/page.tsx`: Users section page.
-    - `globals.css`: Global styles and Tailwind CSS theme configuration (ShadCN variables).
-- `src/components/`: Reusable UI components.
-    - `layout/`: Layout specific components like Header.
-    - `ui/`: ShadCN UI components.
-- `public/`: Static assets.
-- `tailwind.config.ts`: Tailwind CSS configuration.
-- `next.config.ts`: Next.js configuration.
-- `package.json`: Project dependencies and scripts.
+- `src/app/`: Contiene las páginas y layouts principales de la aplicación (usando Next.js App Router).
+  - `layout.tsx`: Layout raíz, incluye estilos globales y estructura principal.
+  - `page.tsx`: Componente de la página de inicio.
+  - `clientes/page.tsx`: Página de la sección de Clientes.
+  - `proveedor/page.tsx`: Página de la sección de Proveedor.
+  - `usuarios/page.tsx`: Página de la sección de Usuarios.
+  - `globals.css`: Estilos globales y configuración del tema de Tailwind CSS (variables de ShadCN).
+- `src/components/`: Componentes de UI reutilizables.
+  - `layout/`: Componentes específicos del layout como el Header.
+  - `ui/`: Componentes de ShadCN UI.
+- `public/`: Recursos estáticos.
+- `tailwind.config.ts`: Configuración de Tailwind CSS.
+- `next.config.ts`: Configuración de Next.js.
+- `package.json`: Dependencias y scripts del proyecto.
 
-## Design Choices
+## Decisiones de Diseño
 
-- **Next.js App Router**: Chosen for its modern features like Server Components, improved routing, and layout capabilities.
-- **Tailwind CSS & ShadCN UI**: Selected for rapid UI development, consistency, and customization via CSS variables. ShadCN provides pre-built, accessible components that integrate well with Tailwind.
-- **Color Scheme**:
-    - Primary: Blue (`#2563EB`) - Used for the header and primary actions.
-    - Background: Light Gray (`#F3F4F6`) - Provides a clean, neutral backdrop.
-    - Accent: Teal (`#14B8A6`) - Used for highlights and interactive elements (though not heavily used in this basic version).
-- **Layout**: Full-width layout with a fixed header ensures navigation is always accessible.
+- **Next.js App Router**: Elegido por sus características modernas como Server Components, enrutamiento mejorado y capacidades de layout.
+- **Tailwind CSS & ShadCN UI**: Seleccionados para un desarrollo de UI rápido, consistencia y personalización a través de variables CSS. ShadCN proporciona componentes preconstruidos y accesibles que se integran bien con Tailwind.
+- **Esquema de Colores**:
+  - **Primario**: Azul (`#2563EB`) - Utilizado para el encabezado y las acciones primarias.
+  - **Fondo**: Gris Claro (`#F3F4F6`) - Proporciona un fondo limpio y neutral.
+  - **Acento**: Teal (`#14B8A6`) - Utilizado para resaltados y elementos interactivos (aunque no se usa mucho en esta versión básica).
+- **Layout**: El layout de ancho completo con un encabezado fijo asegura que la navegación esté siempre accesible.
 
-## Screenshot
+## Capturas de Pantalla
+![image](https://github.com/user-attachments/assets/ee164230-825f-432b-8b81-92173584ba75)
 
-*(Add a screenshot of your running application here)*
+![image](https://github.com/user-attachments/assets/06a6f58a-345f-4bcd-8a0c-d15e49b06593)
 
-```
-[Screenshot of the Admin Panel]
-```
+![image](https://github.com/user-attachments/assets/7ceb3dc4-3f58-4639-a481-072910654751)
+
+![image](https://github.com/user-attachments/assets/cf52aadd-cb0a-40a8-bec0-dd1e86baf04a)
+
+![image](https://github.com/user-attachments/assets/dd9b1e06-6560-48a8-8d64-12668e522dff)
