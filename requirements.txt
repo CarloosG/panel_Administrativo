@@ -1,0 +1,7 @@
+#version de react
+nvm install 18 
+nvm use 18.20.8 
+
+#para trabajar correctamente con tailwind
+npm install lucide-react
+npm install @tailwindcss/postcss
