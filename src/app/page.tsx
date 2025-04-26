@@ -4,11 +4,12 @@ export default function Home() {
   return (
       <Card className="w-full max-w-2xl mx-auto mt-8">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold">Welcome to the Admin Panel</CardTitle>
-          <CardDescription>Select a section from the navigation bar to get started.</CardDescription>
+          <CardTitle className="text-2xl font-bold">Bienvenido al Panel de Administración</CardTitle>
+          <CardDescription>Selecciona una sección de la barra de navegación para comenzar.</CardDescription>
         </CardHeader>
         <CardContent>
-          <p>This is a sample dashboard interface built with Next.js and Tailwind CSS.</p>
+          <p>Este es un panel de ejemplo construido con Next.js y Tailwind CSS.</p>
+          <p className="mt-2">Aquí puedes administrar clientes, proveedores y usuarios.</p>
         </CardContent>
       </Card>
   );

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Building, Users, Truck, User, LogOut } from 'lucide-react';
+import { Building, Users, Truck, UserCog, LogOut } from 'lucide-react'; // Changed User to UserCog
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
@@ -9,22 +9,22 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
           <Building className="h-6 w-6" />
-          <span>Admin Panel</span>
+          <span>Panel Admin</span>
         </Link>
         <nav className="flex items-center gap-4 sm:gap-6">
           <NavLink href="/clientes" icon={<Users />}>
             Clientes
           </NavLink>
           <NavLink href="/proveedor" icon={<Truck />}>
-            Proveedor
+            Proveedores
           </NavLink>
-          <NavLink href="/usuarios" icon={<User />}>
+          <NavLink href="/usuarios" icon={<UserCog />}> {/* Changed icon */}
             Usuarios
           </NavLink>
           {/* Basic Logout button - functionality would need implementation */}
            <Button variant="ghost" size="sm" className="text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground gap-1.5">
             <LogOut className="h-4 w-4" />
-            <span className="hidden sm:inline">Logout</span>
+            <span className="hidden sm:inline">Salir</span> {/* Changed text */}
           </Button>
         </nav>
       </div>
